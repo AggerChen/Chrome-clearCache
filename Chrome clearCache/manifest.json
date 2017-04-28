@@ -24,7 +24,6 @@
 	"permissions": [     				//权限
 	     "browsingData",				//清除缓存权限
 		 "tabs", 						//标签页权限
-		 "<all_urls>",					//url权限
 		 "notifications"				//弹出框权限
 	],
 	"commands": {						//配置快捷键

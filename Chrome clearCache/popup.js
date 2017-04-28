@@ -21,12 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
 					$('#showMsg').delay(2000).fadeOut(500);
 			   });
         });
-		
-		//选项监听
-		options.cleanOpt.onchange = function() {	
-			var status = options.cleanOpt.checked;
-			console.log(status);
-		};
 });
 
 //获取选中的清理选项
