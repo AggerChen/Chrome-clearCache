@@ -1,0 +1,37 @@
+{ 
+	"name": "Chrome clearCache",		//插件名
+	"manifest_version":2,  
+	"version": "0.1",					//版本号 
+	"description": "清除浏览器缓存",	//描述信息
+	"author": "aggerChen",
+	
+	"icons": { "16": "clean16.png","48": "clean48.png","128": "clean128.png" },		//图标：16:浏览器按钮图标 48:扩展程序管理页面图标 128:Chrome商店图标
+	
+	"options_page": "popup.html",		//扩展程序管理页面点击弹出的页面
+	"browser_action": {					//点击浏览器按钮图标弹出的页面
+		"default_icon": "clean16.png",	
+		"default_popup": "popup.html",
+		"default_title": "Chrome clearCache"	//鼠标提示信息
+	},
+	"background": {								//后台运行代码
+		"scripts": ["jquery-3.2.1.min.js", "background.js"],
+		 "persistent": false					//在需要的时候重启，而不是一直占用后台
+	},		
+
+	"web_accessible_resources": [		//可访问的资源路径
+		"clean48.png"
+	],
+	"permissions": [     				//权限
+	     "browsingData",				//清除缓存权限
+		 "tabs", 						//标签页权限
+		 "<all_urls>",					//url权限
+		 "notifications"				//弹出框权限
+	],
+	"commands": {						//配置快捷键
+		"cleanKey": {					//快捷键名
+			"suggested_key": { "default": "Alt+C" },		//键位
+			"description": "clean cache key"				//描述
+		}
+	}
+	
+}

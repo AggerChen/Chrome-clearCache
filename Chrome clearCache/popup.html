@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <title>清理缓存</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="popup.js"></script>
+  </head>
+  <body>
+	<form id="options">
+		<h1>
+		  <img src="clean48.png" alt="Toast">清除缓存
+		</h1>
+		
+		<h2>
+			<input type="button" id="cleanBtn" name="cleanBtn" value="清除缓存" />
+			<span id="showMsg" name="showMsg"></span>
+		</h2>
+		<div style="margin-top:20px">
+			清除时间段：
+			<select id="time" name="time">
+				<option value="1">1天前</option>
+				<option value="5">5天前</option>
+				<option value="30">一个月前</option>
+				<option value="365">一年前</option>
+			</select><br/><br/>
+			<input type="checkbox" name="cleanOpt" value="appcache" checked>应用缓存（appcache）<br/>
+			<input type="checkbox" name="cleanOpt" value="cache"    checked>浏览器缓存（cache）<br/>
+			<input type="checkbox" name="cleanOpt" value="cookies"  checked>cookies<br/>
+			<input type="checkbox" name="cleanOpt" value="passwords" >密码（passwords）<br/>
+			<input type="checkbox" name="cleanOpt" value="downloads">下载记录（downloads）<br/>
+			<input type="checkbox" name="cleanOpt" value="fileSystems">文件系统（fileSystem）<br/>
+			<input type="checkbox" name="cleanOpt" value="formData" checked>表单数据（formData）<br/>
+			<input type="checkbox" name="cleanOpt" value="history">历史记录（history）<br/>
+			<input type="checkbox" name="cleanOpt" value="indexedDB">indexedDB<br/>
+			<input type="checkbox" name="cleanOpt" value="localStorage" checked>本地存储（localStorage）<br/>
+			<input type="checkbox" name="cleanOpt" value="serverBoundCertificates">服务器证书（serverBoundCertificates）<br/>
+			<input type="checkbox" name="cleanOpt" value="pluginData">插件数据（pluginData）<br/>
+			<input type="checkbox" name="cleanOpt" value="webSQL">webSQL<br/>
+		</div>
+    </form>
+  </body>
+</html>
+
+
+
+
