@@ -7,3 +7,4 @@ A chrome plugin, used to clear the browser cache.本项目是一个Chrome插件�
 * 可以选择需要清除的缓存项和清除的时间范围。
 * 可以在浏览器中，按快捷键 Alt+C 来快捷清除缓存。
 * 更多说明欢迎查看博客* [https://mp.csdn.net/postedit/70910588](https://mp.csdn.net/postedit/70910588) 
+- 已有更新2.0版本 建议使用新版本 [https://github.com/AggerChen/Cache-Cleaner](https://github.com/AggerChen/Cache-Cleaner)
