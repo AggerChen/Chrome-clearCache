@@ -1,4 +1,4 @@
-##Chrome-clearCache
+## Chrome-clearCache
 A chrome plugin, used to clear the browser cache.本项目是一个Chrome插件，用于清理浏览器缓存。
 
 * 在chrome地址栏中输入chrome://extensions/ 进入扩展程序页面
